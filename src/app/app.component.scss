@@ -1,0 +1,9 @@
+.container{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    background: var(--background-default);
+    // background: linear-gradient( 0deg,var(--color-homepage-dark),var(--color-homepage-light) );
+    // transition: --color-homepage-light 350ms linear 0s, --color-homepage-dark 350ms linear 0s;
+}

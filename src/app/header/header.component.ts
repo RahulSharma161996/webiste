@@ -3,7 +3,9 @@ import { ThemeService } from '../services/theme.service';
 import {
   faLightbulb as faSolidLightbulb,
   faDollarSign,
-  IconDefinition
+  IconDefinition,
+  faSun,
+  faMoon,
 } from "@fortawesome/free-solid-svg-icons";
 import { faLightbulb as faRegularLightbulb } from "@fortawesome/free-regular-svg-icons";
 
@@ -15,6 +17,8 @@ import { faLightbulb as faRegularLightbulb } from "@fortawesome/free-regular-svg
 export class HeaderComponent implements OnInit {
   faLightbulb: IconDefinition = faRegularLightbulb;
   faDollarSign = faDollarSign;
+  faMoon = faMoon;
+  toggle = 'light';
   constructor(
     private themeService: ThemeService
   ) {}
@@ -34,10 +38,11 @@ export class HeaderComponent implements OnInit {
   toggleTheme() {
     if (this.themeService.isDarkTheme()) {
       this.themeService.setLightTheme();
+      this.toggle = 'light';
     } else {
       this.themeService.setDarkTheme();
+      this.toggle = 'dark';
     }
-
     this.setLightbulb();
   }
 

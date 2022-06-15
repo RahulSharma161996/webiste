@@ -1,25 +1,26 @@
 /* You can add global styles to this file, and also import other style files */
 :root {
     /* Colors */
-    --foreground-default: #08090a;
-    --foreground-secondary: #41474d;
-    --foreground-tertiary: #797c80;
-    --foreground-quaternary: #f4faff;
-    --foreground-light: #41474d;
   
-    --background-default: #f4faff;
-    --background-secondary: #a3b9cc;
-    --background-tertiary: #5c7d99;
-    --background-light: #ffffff;
   
-    --primary-default: #5dfdcb;
-    --primary-dark: #24b286;
-    --primary-light: #b2ffe7;
-  
-    --error-default: #ef3e36;
-    --error-dark: #800600;
-    --error-light: #ffcecc;
-  
+    --background-default: #fff;
+    --header-background: #141B1F;
+    --fadeGrayfont: #fff;
+    --color-homepage-light: hsl(204deg, 67%, 85%);
+    --color-homepage-dark: hsl(202deg, 71%, 90%);
+    --color-text: hsl(222deg, 22%, 5%);
+    --color-background: hsl(0deg, 0%, 100%);
+    --color-blurred-background: hsla(0deg, 0%, 100%, 0.85);
+    --color-primary: hsl(245deg, 100%, 60%);
+    --color-secondary: hsl(333deg, 100%, 45%);
+    --color-tertiary: hsl(255deg, 85%, 30%);
+    --color-decorative: hsl(200deg, 75%, 65%);
+    --color-muted: hsl(210deg, 55%, 92%);
+    --color-muted-background: hsla(210deg, 55%, 92%, 0.85);
+    --color-info: hsl(245deg, 100%, 60%);
+    --color-success: hsl(160deg, 100%, 40%);
+    --color-success-background: hsla(160deg, 100%, 40%, 0.1);
+    --color-sun: #F1BC33;
     /* Shadows */
     --background-tertiary-shadow: 0 1px 3px 0 rgba(92, 125, 153, 0.5);
   }
@@ -32,5 +33,5 @@
   body {
     margin: 0;
     padding: 0;
-    font-family: 'Montserrat';
+    font-family: 'Montserrat', sans-serif;
   }

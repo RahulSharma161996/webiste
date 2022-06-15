@@ -1,17 +1,15 @@
 <div class="header">
-    <div class="logo">
-
-    </div>
     <div class="nav">
+        <div class="logo">
+            <img src="../../assets/logonav.png" height="80px">
+        </div>
         <span>Home</span>
-        <span>Carrer</span>
-        <span>Resume</span>
+        <!-- <span>Carrer</span>
+        <span>Resume</span> -->
     </div>
     <div class="action">
-        <nav>
-            <fa-icon [icon]="faDollarSign"></fa-icon>
-            <h5 class="title secondary-font">ProjectCrypto</h5>
-            <fa-icon [icon]="faLightbulb" (click)="toggleTheme()"></fa-icon>
-          </nav>
-    </div>
+        <span class="moon" *ngIf="toggle == 'dark'"><fa-icon [icon]="faMoon" (click)="toggleTheme()"></fa-icon></span>
+       <span class="sun" *ngIf="toggle == 'light'"><img src="../../assets/sunfull.svg" (click)="toggleTheme()" height="40px"></span>
+        
+        </div>
 </div>
