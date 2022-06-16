@@ -23,7 +23,8 @@ export interface Theme {
         "--color-info": "hsl(245deg, 100%, 60%)",
         "--color-success": "hsl(160deg, 100%, 40%)",
         "--color-success-background": "hsla(160deg, 100%, 40%, 0.1)",
-        "--color-sun": "#F1BC33"
+        "--color-sun": "#F1BC33",
+        "--backgroundImage": "url(./assets/giphy.gif)"
 
 
     
@@ -52,6 +53,8 @@ export interface Theme {
     "--color-alert": "hsl(30deg, 100%, 50%)",
     "--color-homepage-light": "hsla(212deg,32%,8%,0.85)",
     "--color-homepage-dark": "hsla(205deg,24%,15%,0.85)",
-    "--color-homepage-bg": "hsl(210deg, 30%, 8%)"
+    "--color-homepage-bg": "hsl(210deg, 30%, 8%)",
+    "--backgroundImage": "url(./assets/light.gif)"
+   
     }
   };

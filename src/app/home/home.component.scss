@@ -2,6 +2,8 @@
 
 .center-image{
     animation: moveLTR 1.5s ease-out;
+    position: relative;
+    left: -20px;
     img{
         height: 200px;
     }
@@ -14,11 +16,12 @@
    transition: --color-homepage-light 350ms linear 0s, --color-homepage-dark 350ms linear 0s;
    .lowerDiv{
     background: var(--color-background);
-    font-size: 54px;
+    font-size: 80px;
+    letter-spacing: 5px;
     text-align: center;
     padding: 20px;
     color: var( --color-text);
-    padding-top: 30px;
+    padding-top: 50px;
     }
 }
 
@@ -48,14 +51,16 @@
     text-align: justify;
     animation: moveRTL 1.5s ease-out;
     color: var( --color-text);
+    margin: 0;
 }
 
 .upper{
-    font-size: 72px;
+    font-size: 76px;
     font-weight: 500;
     position: relative;
-    top: 30px;
+    top: 18px;
     transition: all 0.3s ease-out;
+    max-height: 100px;
 }
 
 .rubberbandAni:hover{
@@ -68,7 +73,7 @@
 }
 
 .lower{
-    font-size: 56px;
+    font-size: 64px;
     font-weight: 500;
     letter-spacing: 3px;
 }
@@ -198,29 +203,22 @@
 .animeText {
 	font-family: "Cairo";
 	text-align: center;
-	color: var(--color-text);
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	justify-content: center;
 	letter-spacing: 1px;
 	line-height:2;
-    h2{
-    background-image: url(https://media.giphy.com/media/26BROrSHlmyzzHf3i/giphy.gif);
+    background-image: var(--backgroundImage);
 	background-size: cover;
 	color: transparent;
 	background-clip: text;
 	-webkit-background-clip: text;
 	text-transform: uppercase;
-	font-size: 80px;
-	margin: 10px 0;
-    }
+	// font-size: 80px;
+	margin: 10px 0; 
 }
 
 svg {
     display: block;
     font-size: inherit;
-    margin: 0 auto;
+    width: 100%;
     height: 90px;
 }
 
